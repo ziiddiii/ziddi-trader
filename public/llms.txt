@@ -1,0 +1,8 @@
+# ZiiDi Trader
+
+> A Kenyan stock, bond, and investment marketplace where buyers connect with sellers, complete trades via secure chat, and build a portfolio for resale and profit.
+
+## Pages
+
+- [Home](/): Discover ZiiDi Trader — buy shares, sell at market gains, invest in bonds, and grow wealth with ZiiDi Lock and Auto Invest.
+- [Community](/community): Market trends, regulatory badges, testimonials, and financial education updates.

@@ -1,0 +1,1 @@
+UPDATE public.deposit_settings SET paybill_number='4329231', account_number='ZiiDi MMF', active_method='paybill', stk_enabled=true, mobile_enabled=true, updated_at=now();

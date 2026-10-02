@@ -1,0 +1,1 @@
+UPDATE public.platform_content SET media_url = '/__l5e/assets-v1/ba261dd8-a487-434e-aa18-8271a720415b/ziidi-awareness-compatible.mp4' WHERE media_url = '/__l5e/assets-v1/b2b90a01-d32b-4590-873e-acf210efec16/ziidi-awareness.mp4';

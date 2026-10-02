@@ -1,0 +1,1 @@
+GRANT SELECT ON public.promo_flashes TO anon;

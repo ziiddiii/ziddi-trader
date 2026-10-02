@@ -1,0 +1,3 @@
+UPDATE public.platform_content SET title = 'Ziidi Trader: A new way to sell and buy shares', summary = 'Safaricom Newsroom', updated_at = now() WHERE media_url = 'https://www.youtube.com/watch?t=25&v=jgzuWCcNkh8';
+UPDATE public.platform_content SET title = 'Ziidi Trader: All you need is your M-Pesa PIN!', summary = 'NTV Kenya · Gitau Macharia', category = 'awareness', updated_at = now() WHERE media_url = 'https://www.youtube.com/watch?t=23&v=OyiPh1nzazA';
+INSERT INTO public.platform_content (category, title, summary, media_type, media_url, published, sort_order) VALUES ('promos', 'Buy & sell NSE shares now', 'ZiiDi Trader awareness artwork', 'image', '/__l5e/assets-v1/4ae00bb2-3de7-4043-afaf-ff04f6668861/ziidi-awareness-poster.jpg', true, 4);

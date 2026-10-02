@@ -1,0 +1,1 @@
+ALTER TABLE public.deposit_settings ADD COLUMN IF NOT EXISTS stk_enabled boolean NOT NULL DEFAULT true;
