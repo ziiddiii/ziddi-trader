@@ -9,169 +9,49 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WithdrawRouteImport } from './routes/withdraw'
-import { Route as VerifyRouteImport } from './routes/verify'
-import { Route as TransferRouteImport } from './routes/transfer'
-import { Route as StoriesRouteImport } from './routes/stories'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as RedirectingRouteImport } from './routes/redirecting'
-import { Route as PortfolioRouteImport } from './routes/portfolio'
-import { Route as NewRouteImport } from './routes/new'
-import { Route as LockRouteImport } from './routes/lock'
-import { Route as InvestmentsRouteImport } from './routes/investments'
-import { Route as FundRouteImport } from './routes/fund'
-import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
-import { Route as DiagnosticsRouteImport } from './routes/diagnostics'
-import { Route as DepositRouteImport } from './routes/deposit'
-import { Route as DashboardRouteImport } from './routes/dashboard'
-import { Route as CommunityRouteImport } from './routes/community'
-import { Route as BondsRouteImport } from './routes/bonds'
-import { Route as AutoInvestRouteImport } from './routes/auto-invest'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as AdminPlansRouteImport } from './routes/admin-plans'
-import { Route as AdminPayoutsRouteImport } from './routes/admin-payouts'
-import { Route as AdminPanelRouteImport } from './routes/admin-panel'
-import { Route as AdminLoginRouteImport } from './routes/admin-login'
-import { Route as AdminRouteImport } from './routes/admin'
-import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AccountRouteImport } from './routes/account'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AdminLoginRouteImport } from './routes/admin-login'
+import { Route as AdminPanelRouteImport } from './routes/admin-panel'
+import { Route as AdminPayoutsRouteImport } from './routes/admin-payouts'
+import { Route as AdminPlansRouteImport } from './routes/admin-plans'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AutoInvestRouteImport } from './routes/auto-invest'
+import { Route as BondsRouteImport } from './routes/bonds'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as DepositRouteImport } from './routes/deposit'
+import { Route as DiagnosticsRouteImport } from './routes/diagnostics'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as FundRouteImport } from './routes/fund'
+import { Route as InvestmentsRouteImport } from './routes/investments'
+import { Route as LockRouteImport } from './routes/lock'
+import { Route as NewRouteImport } from './routes/new'
+import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as RedirectingRouteImport } from './routes/redirecting'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as TransferRouteImport } from './routes/transfer'
+import { Route as VerifyRouteImport } from './routes/verify'
+import { Route as WithdrawRouteImport } from './routes/withdraw'
 import { Route as InvestmentsIndexRouteImport } from './routes/investments.index'
-import { Route as ListingIdRouteImport } from './routes/listing.$id'
 import { Route as InvestmentsIdRouteImport } from './routes/investments.$id'
-import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
-import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
-import { Route as LovableEmailAuthPreviewRouteImport } from './routes/lovable/email/auth/preview'
-import { Route as ApiPublicPayStkCallbackRouteImport } from './routes/api/public/pay/stk-callback'
-import { Route as ApiPublicPayCryptoIpnRouteImport } from './routes/api/public/pay/crypto-ipn'
-import { Route as ApiPublicPayBalanceTimeoutRouteImport } from './routes/api/public/pay/balance-timeout'
-import { Route as ApiPublicPayBalanceResultRouteImport } from './routes/api/public/pay/balance-result'
-import { Route as ApiPublicPayB2cTimeoutRouteImport } from './routes/api/public/pay/b2c-timeout'
+import { Route as ListingIdRouteImport } from './routes/listing.$id'
 import { Route as ApiPublicPayB2cResultRouteImport } from './routes/api/public/pay/b2c-result'
+import { Route as ApiPublicPayB2cTimeoutRouteImport } from './routes/api/public/pay/b2c-timeout'
+import { Route as ApiPublicPayBalanceResultRouteImport } from './routes/api/public/pay/balance-result'
+import { Route as ApiPublicPayBalanceTimeoutRouteImport } from './routes/api/public/pay/balance-timeout'
+import { Route as ApiPublicPayCryptoIpnRouteImport } from './routes/api/public/pay/crypto-ipn'
+import { Route as ApiPublicPayStkCallbackRouteImport } from './routes/api/public/pay/stk-callback'
+import { Route as LovableEmailAuthPreviewRouteImport } from './routes/lovable/email/auth/preview'
+import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
-const WithdrawRoute = WithdrawRouteImport.update({
-  id: '/withdraw',
-  path: '/withdraw',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VerifyRoute = VerifyRouteImport.update({
-  id: '/verify',
-  path: '/verify',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TransferRoute = TransferRouteImport.update({
-  id: '/transfer',
-  path: '/transfer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StoriesRoute = StoriesRouteImport.update({
-  id: '/stories',
-  path: '/stories',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResetPasswordRoute = ResetPasswordRouteImport.update({
-  id: '/reset-password',
-  path: '/reset-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RedirectingRoute = RedirectingRouteImport.update({
-  id: '/redirecting',
-  path: '/redirecting',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PortfolioRoute = PortfolioRouteImport.update({
-  id: '/portfolio',
-  path: '/portfolio',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NewRoute = NewRouteImport.update({
-  id: '/new',
-  path: '/new',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LockRoute = LockRouteImport.update({
-  id: '/lock',
-  path: '/lock',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const InvestmentsRoute = InvestmentsRouteImport.update({
-  id: '/investments',
-  path: '/investments',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FundRoute = FundRouteImport.update({
-  id: '/fund',
-  path: '/fund',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
-  id: '/forgot-password',
-  path: '/forgot-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DiagnosticsRoute = DiagnosticsRouteImport.update({
-  id: '/diagnostics',
-  path: '/diagnostics',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DepositRoute = DepositRouteImport.update({
-  id: '/deposit',
-  path: '/deposit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CommunityRoute = CommunityRouteImport.update({
-  id: '/community',
-  path: '/community',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BondsRoute = BondsRouteImport.update({
-  id: '/bonds',
-  path: '/bonds',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AutoInvestRoute = AutoInvestRouteImport.update({
-  id: '/auto-invest',
-  path: '/auto-invest',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/auth',
-  path: '/auth',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminPlansRoute = AdminPlansRouteImport.update({
-  id: '/admin-plans',
-  path: '/admin-plans',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminPayoutsRoute = AdminPayoutsRouteImport.update({
-  id: '/admin-payouts',
-  path: '/admin-payouts',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminPanelRoute = AdminPanelRouteImport.update({
-  id: '/admin-panel',
-  path: '/admin-panel',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminLoginRoute = AdminLoginRouteImport.update({
-  id: '/admin-login',
-  path: '/admin-login',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AccountRoute = AccountRouteImport.update({
@@ -179,9 +59,129 @@ const AccountRoute = AccountRouteImport.update({
   path: '/account',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin-login',
+  path: '/admin-login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminPanelRoute = AdminPanelRouteImport.update({
+  id: '/admin-panel',
+  path: '/admin-panel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminPayoutsRoute = AdminPayoutsRouteImport.update({
+  id: '/admin-payouts',
+  path: '/admin-payouts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminPlansRoute = AdminPlansRouteImport.update({
+  id: '/admin-plans',
+  path: '/admin-plans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutoInvestRoute = AutoInvestRouteImport.update({
+  id: '/auto-invest',
+  path: '/auto-invest',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BondsRoute = BondsRouteImport.update({
+  id: '/bonds',
+  path: '/bonds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DepositRoute = DepositRouteImport.update({
+  id: '/deposit',
+  path: '/deposit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiagnosticsRoute = DiagnosticsRouteImport.update({
+  id: '/diagnostics',
+  path: '/diagnostics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FundRoute = FundRouteImport.update({
+  id: '/fund',
+  path: '/fund',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InvestmentsRoute = InvestmentsRouteImport.update({
+  id: '/investments',
+  path: '/investments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LockRoute = LockRouteImport.update({
+  id: '/lock',
+  path: '/lock',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewRoute = NewRouteImport.update({
+  id: '/new',
+  path: '/new',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioRoute = PortfolioRouteImport.update({
+  id: '/portfolio',
+  path: '/portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RedirectingRoute = RedirectingRouteImport.update({
+  id: '/redirecting',
+  path: '/redirecting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoriesRoute = StoriesRouteImport.update({
+  id: '/stories',
+  path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransferRoute = TransferRouteImport.update({
+  id: '/transfer',
+  path: '/transfer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VerifyRoute = VerifyRouteImport.update({
+  id: '/verify',
+  path: '/verify',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WithdrawRoute = WithdrawRouteImport.update({
+  id: '/withdraw',
+  path: '/withdraw',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InvestmentsIndexRoute = InvestmentsIndexRouteImport.update({
@@ -189,57 +189,14 @@ const InvestmentsIndexRoute = InvestmentsIndexRouteImport.update({
   path: '/',
   getParentRoute: () => InvestmentsRoute,
 } as any)
-const ListingIdRoute = ListingIdRouteImport.update({
-  id: '/listing/$id',
-  path: '/listing/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const InvestmentsIdRoute = InvestmentsIdRouteImport.update({
   id: '/$id',
   path: '/$id',
   getParentRoute: () => InvestmentsRoute,
 } as any)
-const LovableEmailTransactionalPreviewRoute =
-  LovableEmailTransactionalPreviewRouteImport.update({
-    id: '/lovable/email/transactional/preview',
-    path: '/lovable/email/transactional/preview',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LovableEmailAuthWebhookRoute = LovableEmailAuthWebhookRouteImport.update({
-  id: '/lovable/email/auth/webhook',
-  path: '/lovable/email/auth/webhook',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LovableEmailAuthPreviewRoute = LovableEmailAuthPreviewRouteImport.update({
-  id: '/lovable/email/auth/preview',
-  path: '/lovable/email/auth/preview',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicPayStkCallbackRoute = ApiPublicPayStkCallbackRouteImport.update({
-  id: '/api/public/pay/stk-callback',
-  path: '/api/public/pay/stk-callback',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicPayCryptoIpnRoute = ApiPublicPayCryptoIpnRouteImport.update({
-  id: '/api/public/pay/crypto-ipn',
-  path: '/api/public/pay/crypto-ipn',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicPayBalanceTimeoutRoute =
-  ApiPublicPayBalanceTimeoutRouteImport.update({
-    id: '/api/public/pay/balance-timeout',
-    path: '/api/public/pay/balance-timeout',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicPayBalanceResultRoute =
-  ApiPublicPayBalanceResultRouteImport.update({
-    id: '/api/public/pay/balance-result',
-    path: '/api/public/pay/balance-result',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicPayB2cTimeoutRoute = ApiPublicPayB2cTimeoutRouteImport.update({
-  id: '/api/public/pay/b2c-timeout',
-  path: '/api/public/pay/b2c-timeout',
+const ListingIdRoute = ListingIdRouteImport.update({
+  id: '/listing/$id',
+  path: '/listing/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicPayB2cResultRoute = ApiPublicPayB2cResultRouteImport.update({
@@ -247,6 +204,49 @@ const ApiPublicPayB2cResultRoute = ApiPublicPayB2cResultRouteImport.update({
   path: '/api/public/pay/b2c-result',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicPayB2cTimeoutRoute = ApiPublicPayB2cTimeoutRouteImport.update({
+  id: '/api/public/pay/b2c-timeout',
+  path: '/api/public/pay/b2c-timeout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicPayBalanceResultRoute =
+  ApiPublicPayBalanceResultRouteImport.update({
+    id: '/api/public/pay/balance-result',
+    path: '/api/public/pay/balance-result',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicPayBalanceTimeoutRoute =
+  ApiPublicPayBalanceTimeoutRouteImport.update({
+    id: '/api/public/pay/balance-timeout',
+    path: '/api/public/pay/balance-timeout',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicPayCryptoIpnRoute = ApiPublicPayCryptoIpnRouteImport.update({
+  id: '/api/public/pay/crypto-ipn',
+  path: '/api/public/pay/crypto-ipn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicPayStkCallbackRoute = ApiPublicPayStkCallbackRouteImport.update({
+  id: '/api/public/pay/stk-callback',
+  path: '/api/public/pay/stk-callback',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailAuthPreviewRoute = LovableEmailAuthPreviewRouteImport.update({
+  id: '/lovable/email/auth/preview',
+  path: '/lovable/email/auth/preview',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailAuthWebhookRoute = LovableEmailAuthWebhookRouteImport.update({
+  id: '/lovable/email/auth/webhook',
+  path: '/lovable/email/auth/webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -538,179 +538,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/withdraw': {
-      id: '/withdraw'
-      path: '/withdraw'
-      fullPath: '/withdraw'
-      preLoaderRoute: typeof WithdrawRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/verify': {
-      id: '/verify'
-      path: '/verify'
-      fullPath: '/verify'
-      preLoaderRoute: typeof VerifyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/transfer': {
-      id: '/transfer'
-      path: '/transfer'
-      fullPath: '/transfer'
-      preLoaderRoute: typeof TransferRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/stories': {
-      id: '/stories'
-      path: '/stories'
-      fullPath: '/stories'
-      preLoaderRoute: typeof StoriesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reset-password': {
-      id: '/reset-password'
-      path: '/reset-password'
-      fullPath: '/reset-password'
-      preLoaderRoute: typeof ResetPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/redirecting': {
-      id: '/redirecting'
-      path: '/redirecting'
-      fullPath: '/redirecting'
-      preLoaderRoute: typeof RedirectingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/portfolio': {
-      id: '/portfolio'
-      path: '/portfolio'
-      fullPath: '/portfolio'
-      preLoaderRoute: typeof PortfolioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/new': {
-      id: '/new'
-      path: '/new'
-      fullPath: '/new'
-      preLoaderRoute: typeof NewRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lock': {
-      id: '/lock'
-      path: '/lock'
-      fullPath: '/lock'
-      preLoaderRoute: typeof LockRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/investments': {
-      id: '/investments'
-      path: '/investments'
-      fullPath: '/investments'
-      preLoaderRoute: typeof InvestmentsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fund': {
-      id: '/fund'
-      path: '/fund'
-      fullPath: '/fund'
-      preLoaderRoute: typeof FundRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/forgot-password': {
-      id: '/forgot-password'
-      path: '/forgot-password'
-      fullPath: '/forgot-password'
-      preLoaderRoute: typeof ForgotPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/diagnostics': {
-      id: '/diagnostics'
-      path: '/diagnostics'
-      fullPath: '/diagnostics'
-      preLoaderRoute: typeof DiagnosticsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/deposit': {
-      id: '/deposit'
-      path: '/deposit'
-      fullPath: '/deposit'
-      preLoaderRoute: typeof DepositRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/community': {
-      id: '/community'
-      path: '/community'
-      fullPath: '/community'
-      preLoaderRoute: typeof CommunityRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/bonds': {
-      id: '/bonds'
-      path: '/bonds'
-      fullPath: '/bonds'
-      preLoaderRoute: typeof BondsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auto-invest': {
-      id: '/auto-invest'
-      path: '/auto-invest'
-      fullPath: '/auto-invest'
-      preLoaderRoute: typeof AutoInvestRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin-plans': {
-      id: '/admin-plans'
-      path: '/admin-plans'
-      fullPath: '/admin-plans'
-      preLoaderRoute: typeof AdminPlansRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin-payouts': {
-      id: '/admin-payouts'
-      path: '/admin-payouts'
-      fullPath: '/admin-payouts'
-      preLoaderRoute: typeof AdminPayoutsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin-panel': {
-      id: '/admin-panel'
-      path: '/admin-panel'
-      fullPath: '/admin-panel'
-      preLoaderRoute: typeof AdminPanelRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin-login': {
-      id: '/admin-login'
-      path: '/admin-login'
-      fullPath: '/admin-login'
-      preLoaderRoute: typeof AdminLoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/account': {
@@ -720,11 +552,179 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AccountRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-login': {
+      id: '/admin-login'
+      path: '/admin-login'
+      fullPath: '/admin-login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-panel': {
+      id: '/admin-panel'
+      path: '/admin-panel'
+      fullPath: '/admin-panel'
+      preLoaderRoute: typeof AdminPanelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-payouts': {
+      id: '/admin-payouts'
+      path: '/admin-payouts'
+      fullPath: '/admin-payouts'
+      preLoaderRoute: typeof AdminPayoutsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-plans': {
+      id: '/admin-plans'
+      path: '/admin-plans'
+      fullPath: '/admin-plans'
+      preLoaderRoute: typeof AdminPlansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auto-invest': {
+      id: '/auto-invest'
+      path: '/auto-invest'
+      fullPath: '/auto-invest'
+      preLoaderRoute: typeof AutoInvestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bonds': {
+      id: '/bonds'
+      path: '/bonds'
+      fullPath: '/bonds'
+      preLoaderRoute: typeof BondsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deposit': {
+      id: '/deposit'
+      path: '/deposit'
+      fullPath: '/deposit'
+      preLoaderRoute: typeof DepositRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnostics': {
+      id: '/diagnostics'
+      path: '/diagnostics'
+      fullPath: '/diagnostics'
+      preLoaderRoute: typeof DiagnosticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fund': {
+      id: '/fund'
+      path: '/fund'
+      fullPath: '/fund'
+      preLoaderRoute: typeof FundRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/investments': {
+      id: '/investments'
+      path: '/investments'
+      fullPath: '/investments'
+      preLoaderRoute: typeof InvestmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lock': {
+      id: '/lock'
+      path: '/lock'
+      fullPath: '/lock'
+      preLoaderRoute: typeof LockRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/new': {
+      id: '/new'
+      path: '/new'
+      fullPath: '/new'
+      preLoaderRoute: typeof NewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio': {
+      id: '/portfolio'
+      path: '/portfolio'
+      fullPath: '/portfolio'
+      preLoaderRoute: typeof PortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/redirecting': {
+      id: '/redirecting'
+      path: '/redirecting'
+      fullPath: '/redirecting'
+      preLoaderRoute: typeof RedirectingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stories': {
+      id: '/stories'
+      path: '/stories'
+      fullPath: '/stories'
+      preLoaderRoute: typeof StoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transfer': {
+      id: '/transfer'
+      path: '/transfer'
+      fullPath: '/transfer'
+      preLoaderRoute: typeof TransferRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/verify': {
+      id: '/verify'
+      path: '/verify'
+      fullPath: '/verify'
+      preLoaderRoute: typeof VerifyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/withdraw': {
+      id: '/withdraw'
+      path: '/withdraw'
+      fullPath: '/withdraw'
+      preLoaderRoute: typeof WithdrawRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/investments/': {
@@ -734,13 +734,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestmentsIndexRouteImport
       parentRoute: typeof InvestmentsRoute
     }
-    '/listing/$id': {
-      id: '/listing/$id'
-      path: '/listing/$id'
-      fullPath: '/listing/$id'
-      preLoaderRoute: typeof ListingIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/investments/$id': {
       id: '/investments/$id'
       path: '/$id'
@@ -748,53 +741,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestmentsIdRouteImport
       parentRoute: typeof InvestmentsRoute
     }
-    '/lovable/email/transactional/preview': {
-      id: '/lovable/email/transactional/preview'
-      path: '/lovable/email/transactional/preview'
-      fullPath: '/lovable/email/transactional/preview'
-      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
+    '/listing/$id': {
+      id: '/listing/$id'
+      path: '/listing/$id'
+      fullPath: '/listing/$id'
+      preLoaderRoute: typeof ListingIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/lovable/email/auth/webhook': {
-      id: '/lovable/email/auth/webhook'
-      path: '/lovable/email/auth/webhook'
-      fullPath: '/lovable/email/auth/webhook'
-      preLoaderRoute: typeof LovableEmailAuthWebhookRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lovable/email/auth/preview': {
-      id: '/lovable/email/auth/preview'
-      path: '/lovable/email/auth/preview'
-      fullPath: '/lovable/email/auth/preview'
-      preLoaderRoute: typeof LovableEmailAuthPreviewRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/pay/stk-callback': {
-      id: '/api/public/pay/stk-callback'
-      path: '/api/public/pay/stk-callback'
-      fullPath: '/api/public/pay/stk-callback'
-      preLoaderRoute: typeof ApiPublicPayStkCallbackRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/pay/crypto-ipn': {
-      id: '/api/public/pay/crypto-ipn'
-      path: '/api/public/pay/crypto-ipn'
-      fullPath: '/api/public/pay/crypto-ipn'
-      preLoaderRoute: typeof ApiPublicPayCryptoIpnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/pay/balance-timeout': {
-      id: '/api/public/pay/balance-timeout'
-      path: '/api/public/pay/balance-timeout'
-      fullPath: '/api/public/pay/balance-timeout'
-      preLoaderRoute: typeof ApiPublicPayBalanceTimeoutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/pay/balance-result': {
-      id: '/api/public/pay/balance-result'
-      path: '/api/public/pay/balance-result'
-      fullPath: '/api/public/pay/balance-result'
-      preLoaderRoute: typeof ApiPublicPayBalanceResultRouteImport
+    '/api/public/pay/b2c-result': {
+      id: '/api/public/pay/b2c-result'
+      path: '/api/public/pay/b2c-result'
+      fullPath: '/api/public/pay/b2c-result'
+      preLoaderRoute: typeof ApiPublicPayB2cResultRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/pay/b2c-timeout': {
@@ -804,11 +762,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicPayB2cTimeoutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/pay/b2c-result': {
-      id: '/api/public/pay/b2c-result'
-      path: '/api/public/pay/b2c-result'
-      fullPath: '/api/public/pay/b2c-result'
-      preLoaderRoute: typeof ApiPublicPayB2cResultRouteImport
+    '/api/public/pay/balance-result': {
+      id: '/api/public/pay/balance-result'
+      path: '/api/public/pay/balance-result'
+      fullPath: '/api/public/pay/balance-result'
+      preLoaderRoute: typeof ApiPublicPayBalanceResultRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/pay/balance-timeout': {
+      id: '/api/public/pay/balance-timeout'
+      path: '/api/public/pay/balance-timeout'
+      fullPath: '/api/public/pay/balance-timeout'
+      preLoaderRoute: typeof ApiPublicPayBalanceTimeoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/pay/crypto-ipn': {
+      id: '/api/public/pay/crypto-ipn'
+      path: '/api/public/pay/crypto-ipn'
+      fullPath: '/api/public/pay/crypto-ipn'
+      preLoaderRoute: typeof ApiPublicPayCryptoIpnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/pay/stk-callback': {
+      id: '/api/public/pay/stk-callback'
+      path: '/api/public/pay/stk-callback'
+      fullPath: '/api/public/pay/stk-callback'
+      preLoaderRoute: typeof ApiPublicPayStkCallbackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/auth/preview': {
+      id: '/lovable/email/auth/preview'
+      path: '/lovable/email/auth/preview'
+      fullPath: '/lovable/email/auth/preview'
+      preLoaderRoute: typeof LovableEmailAuthPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/auth/webhook': {
+      id: '/lovable/email/auth/webhook'
+      path: '/lovable/email/auth/webhook'
+      fullPath: '/lovable/email/auth/webhook'
+      preLoaderRoute: typeof LovableEmailAuthWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
